@@ -1,0 +1,28 @@
+body, html{
+    display: flex;
+    justify-content: center;
+    background-color: burlywood;
+}
+#container{
+    width: 1000px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+header, nav, section, footer{
+    border: 1px solid grey;
+    width: 100%
+}
+h1{
+    width: 700px;
+    float: left;
+}
+#header-img{
+    float: left;
+    border: solid purple;
+    justify-content: right;
+}
+ul{
+    list-style: none;
+}
+
