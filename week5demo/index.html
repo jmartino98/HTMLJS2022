@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table tr,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Table Example</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Year</td>
+                <td>Make</td>
+                <td>Model</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1956</td>
+                <td>Ford</td>
+                <td>Thunderbird</td>
+            </tr>
+            <tr>
+                <td>1999</td>
+                <td>Audi</td>
+                <td>TT</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>GMC</td>
+                <td>Sierra</td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>Polaris</td>
+                <td>Sportsman</td>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>Suzuki</td>
+                <td>SX4</td>
+            </tr>
+            <tr>
+                <td>1985</td>
+                <td>Volkswagen</td>
+                <td>Scirocco</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <form action="" method="GET">
+                <tr>
+                    <td>Select your favorite car</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="car" value="1956 Ford Thunderbird"> 1956 Ford Thunderbird
+                        <br>
+                        <input type="radio" name="car" value="1999 Audi TT"> 1999 Audi TT
+                        <br>
+                        <input type="radio" name="car" value="2021 GMC Sierra"> 2021 GMC Sierra
+                        <br>
+                        <input type="radio" name="car" value="2018 Polaris Sportsman"> 2018 Polaris Sportsman
+                        <br>
+                        <input type="radio" name="car" value="2008 Suzuki SX4"> 2008 Suzuki SX4
+                        <br>
+                        <input type="radio" name="car" value="1985 Volkswagen Scirocco"> 1985 Volkswagen Scirocco
+
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="Username">Enter Your Username Here</label></td>
+                    <td>
+                        <input type="text" name="firstname" placeholder="Enter your first name" id="firstname"><br>
+                        <input type="text" name="lastname" placeholder="Enter your last name" id="lastname"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="submit">Click submit button when ready</label>
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit Form">
+                    </td>
+
+                </tr>
+            </form>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
