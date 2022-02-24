@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1>Pay Calculator</h1>
+    <br>
+    <br>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label for="first" class="questions">First Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="first"n id="first">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="last" class="questions">Last Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="last" id="last">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age" class="questions">Age</label>
+                </td>
+                <td>
+                    <input type="text" name="age" id="age">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="submit" id="enter-button">
+                </td>
+                <td>
+
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    <br>
+    <br>
+    <h2>Display Info From The Form</h2>
+    <div id="info" style="border: 1px solid black; width: 500px; height: 200px;">
+    </div>
+    <p id="one">Green</p>
+    <p id="two">Red</p>
+    <br>
+    <p>End of Form</p>
+    
+    <script>
+        body.innerHTML += `<p>This content was added via JavaScript</p>`
+        function alertInfo(){
+            var firstName = document.querySelector(`#first`).value
+            var lastName = document.querySelector(`#last`).value
+            var age = document.querySelector( `#age`).value
+            var info = document.querySelector( `#info`)
+            
+            age = Number(age)
+            var dogYears = (age * 7).toFixed(1)
+            var catYears = (age * 4).toFixed(1)
+            info.innerHTML = `<br> Here is the information that you entered, now get fucked <br><br>Your age: ${age}<br><br>Your dog age: ${dogYears}<br><br>Your cat age: ${catYears}Your first name: ${firstName}Your last name: ${lastName}`
+        }
+        var enterButton = document.querySelector(`#enter-button`)
+        enterButton.addEventListener(`click`, alertInfo)
+        one.addEventListener(`click`, function(){one.style.color = "green"})
+        two.addEventListener(`click`, function(){two.style.color = "red"})
+
+    </script>
+</body>
+</html>
